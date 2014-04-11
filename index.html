@@ -1,0 +1,362 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portafolio de evidencias</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="menuPrincipal">
+	<div data-role="header">
+		<h1>Menú Principal</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#etiquetas">Etiquetas</a></li>
+            <li><a href="#hipervinculos">Hipervinculos</a></li>
+			<li><a href="#listas">Listas desplegables</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+            <li><a href="#inputs">Componentes de entrada</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Por: Diego Rogelio Parra Márin</h4>
+	</div>
+</div>
+
+<div data-role="page" id="etiquetas">
+	<div data-role="header">
+    	<a href="#menuPrincipal" id="button">Regresar</a>
+		<h1>Etiquetas</h1>
+	</div>
+	<div data-role="content">	
+		<<label>label id="idLabel" for="forLabel"</label>>  texto ....<label><</label>/label>
+        <br/><br/>Resultado<br/>texto ....
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="hipervinculos">
+	<div data-role="header">
+    	<a href="#menuPrincipal" id="button">Regresar</a>
+		<h1>Hipervinculos</h1>
+	</div>
+	<div data-role="content">	
+		<<label>a href="#linkLocal" id="idHipervinculo" </label>>  texto ....<label><</label>/a> <br/>
+        <<label>a href="http://www.google.com/" id="idHipervinculo" </label>>  texto ....<label><</label>/a><br/>
+        <br/>Resultado: <br/> <a href="http://www.google.com/">texto ....</a>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="listas">
+	<div data-role="header">
+    <a href="#menuPrincipal" id="button">Regresar</a>
+		<h1>Listas desplegables</h1>
+	</div>
+	<div data-role="content">
+<label><</label>select id="idLista" onChange="funcion()">
+<br/><<label>option>Item 1<</label>/option>
+<br/><<label>option>Item 2<</label>/option>
+<br/><<label>option>Item 3<</label>/option>
+<br/><<label>option>Item n<</label>/option>
+<br/><<label>/select></label><br/><br/>
+	Resultado<br/><br/>
+	<select id="idLista">
+<option>Item 1</option>
+<option>Item 2</option>
+<option>Item 3</option>
+<option>Item n</option>
+</select>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="imagenes">
+	<div data-role="header">
+    	<a href="#menuPrincipal" id="button">Regresar</a>
+		<h1>Imágenes</h1>
+	</div>
+	<div data-role="content">	
+    <<label>img id="idImagen" src="ubicacion/de/la/imagen.jpj"</label>/><br/><br/>Resultado:<br/>
+	<img id="idImagen" src="jquery-mobile/1467488_10151800018431937_691476255_n.jpg"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="inputs">
+	<div data-role="header">
+    <a href="#menuPrincipal" id="button">Regresar</a>
+		<h1>Componentes de entrada</h1>
+	</div>
+	<div data-role="content">	
+	<ul data-role="listview">
+			<li><a href="#texto">Texto</a></li>
+            <li><a href="#password">Contreaseña</a></li>
+            <li><a href="#mail">e-Mail</a></li>
+            <li><a href="#number">Números</a></li>
+			<li><a href="#fecha">Fechas</a></li>
+            <li><a href="#tiempo">Tiempo</a></li>
+            <li><a href="#radio">RadioButton</a></li>
+            <li><a href="#check">CheckBox</a></li>
+            <li><a href="#color">Selector de colores</a></li>
+            <li><a href="#file">Selector de archivo</a></li>
+            <li><a href="#slider">Deslizador</a></li>
+            <li><a href="#boton">Botones</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+<div data-role="page" id="texto">
+	<div data-role="header">
+	    <a href="#inputs" id="button">Regresar</a>
+		<h1>Cajas de texto simples</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="TEXT" id="IdTxt"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="text"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+    
+</div><div data-role="page" id="password">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Campo Contraseña</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="PASSWORD" id="IdTxtOculto"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="password"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="mail">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>e- Mail</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="MAIL" id="IdMail"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="mail"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="number">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Números</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="NUMBER" id="IdTxtNumber"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="number"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="fecha">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Fechas</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="DATE" id="IdFecha"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="date"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="tiempo">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Horarios</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="TIME" id="IdTime"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="time"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="radio">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>RadioButtons</h1>
+	</div>
+	<div data-role="content">	
+	Radio 1<<label>Input type="RADIO" id="IdRadio1" name="Grupo" checked/></label>
+    <br/>
+    Radio 2<<label>Input type="RADIO" id="IdRadio2"  name="Grupo"/></label>
+    <br/>
+    Radio 3<<label>Input type="RADIO" id="IdRadio3"  name="Grupo"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    Radio 1<input type="radio" name="Grupo" checked/>
+    Radio 2<input type="radio" name="Grupo"/>
+    Radio 3<input type="radio" name="Grupo"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="fecha">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Fechas</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="Date" id="IdFecha"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="date"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="check">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>CheckBox</h1>
+	</div>
+	<div data-role="content">	
+    Caja 1
+	<<label>Input type="checkbox" id="Idcheck1"/></label>
+    <br/><br/>
+    Caja 2
+    <<label>Input type="checkbox" id="Idcheck2"/></label>
+    <br/><br/>
+    Caja 3
+    <<label>Input type="checkbox" id="Idcheck3"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    Caja 1<input type="checkbox"/>
+    Caja 2<input type="checkbox"/>
+    Caja 3<input type="checkbox"/>    
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="color">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Selector de colores</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="color" id="IdColor"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="color"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="file">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Selector de Archivos</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="File" id="IdArchivo"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="file"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="slider">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Deslizador</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="range" id="IdDeslizador" min="0" max="100"/></label>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="range" min="0" max="100"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+<div data-role="page" id="boton">
+	<div data-role="header">
+    <a href="#inputs" id="button">Regresar</a>
+		<h1>Botones</h1>
+	</div>
+	<div data-role="content">	
+	<<label>Input type="button" id="btnAceptar" value="Aceptar" onClick="funcion()"/></label><br/>
+    <<label>Input type="submit" id="btnEnviar" value="Enviar" onClick="funcionEnviar()"/></label><br/>
+    <br/><br/>
+    Resultado:
+    <br/><br/>
+    <input type="button" value="Aceptar"/>
+    <input type="submit" value="Enviar"/>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+</body>
+</html>
